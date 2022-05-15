@@ -5,8 +5,7 @@ import (
 )
 
 func main() {
-	prices := []int{1, 2, 3, 4, 5}
-
-	fmt.Println(prices[0])
-	fmt.Println(prices[3])
+	if 20 > 18 {
+		fmt.Println("x is greater then y")
+	}
 }
