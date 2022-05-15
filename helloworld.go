@@ -4,12 +4,15 @@ import (
 	"fmt"
 )
 
-func main() {
-	adj := [2]string{"big", "tasty"}
-	fruits := [3]string{"apple", "orange", "banana"}
-	for i:=0; i < len(adj); i++{
-		for j:=0; j < len(fruits); j++{
-			fmt.Println(adj[i], fruits[j])
-		}
+func factorial_recursion(x float64) (y float64) {
+	if x > 0 {
+		y = x * factorial_recursion(x-1)
+	} else {
+		y = 1
 	}
+	return
+}
+
+func main() {
+	fmt.Println(factorial_recursion(4))
 }
