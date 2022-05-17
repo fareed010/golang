@@ -23,5 +23,4 @@ func main() {
 	fmt.Println("Age: ", pers1.age)
 	fmt.Println("Job: ", pers1.job)
 	fmt.Println("Salary: ", pers1.salary)
-
 }
